@@ -46,12 +46,12 @@ Vous trouver le fichier DB_Fuseki.rdf le shema de la base de données que vous p
 
 
 ## Prérequis:
-Node.js (version 14 ou plus récente)
-npm (gestionnaire de paquets Node.js)
-Java (version 8 ou plus récente)
-Apache Jena Fuseki pour gérer la base de données RDF
-Protege pour la modélisation des données RDF
-SPARQL pour interroger la base de données RDF
+- **Node.js** :version 14 ou plus récente
+- **npm ** :gestionnaire de paquets Node.js
+- **Java** :version 8 ou plus récente
+- **Apache Jena Fuseki** : pour gérer la base de données RDF
+- **Protege** : pour la modélisation des données RDF
+- **SPARQL**:  pour interroger la base de données RDF
 
 
 ### Installation et démarrage
@@ -86,5 +86,7 @@ Assurez-vous que les données RDF sont chargées dans votre serveur Fuseki.
 
 
 ## Screen Shoots : 
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
 
 
