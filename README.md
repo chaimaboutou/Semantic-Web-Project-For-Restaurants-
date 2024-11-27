@@ -39,13 +39,13 @@ WHERE {
   ?restaurant db:locatedIn ?city .
   FILTER (?city = "Paris")
 }
-
-
+```
+## Base de données RDF
 Vous trouver le fichier DB_Fuseki.rdf le shema de la base de données que vous pouvez porteer dans dataset dans Fuseki Jena 
 
 
 
-### Prérequis:
+## Prérequis:
 Node.js (version 14 ou plus récente)
 npm (gestionnaire de paquets Node.js)
 Java (version 8 ou plus récente)
