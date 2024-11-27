@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>hospital</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- Jakarta Servlet API -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version> <!-- Match your Jetty and Jersey versions -->
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Jersey Core and Servlet -->
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-common</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <!-- Jersey Injection (for dependency injection) -->
+        <dependency>
+            <groupId>org.glassfish.jersey.inject</groupId>
+            <artifactId>jersey-hk2</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <!-- JSON support (Optional, if you're using JSON) -->
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-jackson</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <!-- JAXB API for WADL generation -->
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <!-- Jetty Server and Servlet -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>11.0.24</version> <!-- Updated version of Jetty -->
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>11.0.15</version> <!-- Updated version of Jetty -->
+        </dependency>
+        
+        
+		<dependency>
+		    <groupId>org.apache.jena</groupId>
+		    <artifactId>apache-jena-libs</artifactId>
+		    <version>5.2.0</version>
+		    <type>pom</type>
+		</dependency>
+
+
+    <!-- Dépendance pour Apache Jena ARQ (pour effectuer des requêtes SPARQL) -->
+    <dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>jena-arq</artifactId>
+        <version>4.8.0</version>
+    </dependency>
+
+    <!-- Dépendance pour Apache Jena RDFConnection -->
+    <dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>jena-rdfconnection</artifactId>
+        <version>4.8.0</version>
+    </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Jetty Plugin for Maven to run the server -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>9.4.35.v20201120</version>
+                <configuration>
+                    <contextPath>/</contextPath>
+                    <!-- Remove if you don't have static content -->
+                    <webAppConfig>
+                        <resourceBase>src/main/webapp</resourceBase>
+                    </webAppConfig>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

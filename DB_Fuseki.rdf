@@ -1,0 +1,475 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chaimaboutou/ontologies/2024/9/untitled-ontology-8/"
+     xml:base="http://www.semanticweb.org/chaimaboutou/ontologies/2024/9/untitled-ontology-8/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ProjetRestaurant="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#hasAmenity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#hasAmenity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Amenity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#hasCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#hasManager -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#hasManager">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Manager"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#hasService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#hasService">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#locatedInCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#locatedInCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#adresse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#adresse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#photo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#photo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#titre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#titre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Amenity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Amenity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#OfferedFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Establishment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Establishment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#NaturalPark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#NaturalPark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#OfferedFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#OfferedFacility">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Place">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Establishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#OfferedFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#AirConditioning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#AirConditioning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Amenity"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#EventHosting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Beynost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Beynost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Château-Gaillard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Château-Gaillard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#EventHosting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#EventHosting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#HomeDelivery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#HomeDelivery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#ParkingLot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#ParkingLot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Amenity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q53845265 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q53845265">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#AirConditioning"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Château-Gaillard"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#EventHosting"/>
+        <ProjetRestaurant:adresse>130, chemin des Vignes 01500 Château-Gaillard</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>restaurant à Château-Gaillard dans l&apos;Ain en France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/Restaurant%20La%20Villa%20%C3%A0%20Ch%C3%A2teau-Gaillard%20%28Ain%2C%20France%29.JPG</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>La Villa</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q56025734 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q56025734">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#ParkingLot"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Sainte-Julie"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#HomeDelivery"/>
+        <ProjetRestaurant:adresse>53, place du Lavoir 01150 Sainte-Julie</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>restaurant à Sainte-Julie en France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/L%27Auberge%20du%20Lavoir%20%28Sainte-Julie%29.JPG</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>L&apos;Auberge du Lavoir</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q59609612 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q59609612">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Terrace"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Takeaway"/>
+        <ProjetRestaurant:adresse>101, rue Ney 69006 Lyon</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>restaurant japonais à Lyon, France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/Japontori%20-%20cuisine%20%28barbecue%29.jpg</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>Japontori</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q59820716 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q59820716">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#ParkingLot"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#VegetarianOptions"/>
+        <ProjetRestaurant:adresse>105 Rue de la Part-Dieu, 69003 Lyon</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>restaurant à Lyon, France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/Int%C3%A9rieur%20L%27assiette%20autour%20du%20Vin.jpg</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>L&apos;assiette autour du vin</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q60462076 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q60462076">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#AirConditioning"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Beynost"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Takeaway"/>
+        <ProjetRestaurant:adresse>326 Avenue de la Gare, 01700 Beynost</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>ancien restaurant à Beynost, France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/Restaurant%20C%C3%B4t%C3%A9%20Gare%20%28Beynost%29.jpg</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>Côté Gare</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q60615583 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q60615583">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#ParkingLot"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#EventHosting"/>
+        <ProjetRestaurant:adresse>7, rue Aimé-Collomb, 69003 Lyon</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>restaurant à Lyon, France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/La%20Cocagne%20%28restaurant%20%C3%A0%20Lyon%29.jpg</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>La Cocagne</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q61041483 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q61041483">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Terrace"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#VegetarianOptions"/>
+        <ProjetRestaurant:adresse>112 Rue Paul Bert 69003 Lyon</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>restaurant dominicain à Lyon, France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/Au%2023%20%28restaurant%20%C3%A0%20Lyon%29.jpg</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>Au 23</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q61184110 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q61184110">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#WIFI"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#VegetarianOptions"/>
+        <ProjetRestaurant:adresse>246 Cours Lafayette 69003 Lyon</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>restaurant vénézuélien à Lyon, France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/Arepado%20%28Lyon%29.jpg</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>Arepado</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q61577544 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q61577544">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#WIFI"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#EventHosting"/>
+        <ProjetRestaurant:adresse>200 Rue Garibaldi 69003 Lyon</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>restaurant à Lyon, France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/Restaurant%20La%20Voie%20Himalaya%20%28Lyon%29%20rue%20Garibaldi.jpg</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>La Voie Himalaya</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q61605861 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Q61605861">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Restaurant"/>
+        <ProjetRestaurant:hasAmenity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#ParkingLot"/>
+        <ProjetRestaurant:hasCity rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Lyon"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#VegetarianOptions"/>
+        <ProjetRestaurant:adresse>3 Rue Pré-Gaudry 69007 Lyon</ProjetRestaurant:adresse>
+        <ProjetRestaurant:description>centre culturel et restaurant à Lyon, France</ProjetRestaurant:description>
+        <ProjetRestaurant:photo>http://commons.wikimedia.org/wiki/Special:FilePath/La%20Commune%20%28Lyon%29%20-%20All%C3%A9e.jpg</ProjetRestaurant:photo>
+        <ProjetRestaurant:titre>La Commune</ProjetRestaurant:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Sainte-Julie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Sainte-Julie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Takeaway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Takeaway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Terrace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Terrace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Amenity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#VegetarianOptions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#VegetarianOptions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Service"/>
+        <ProjetRestaurant:hasService rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#VegetarianOptions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#WIFI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#WIFI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/BoutouNaji/ontologies/2024/9/ProjetRestaurant#Amenity"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

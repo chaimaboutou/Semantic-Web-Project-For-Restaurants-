@@ -1,0 +1,57 @@
+/* Styles pour la navbar */
+.navbar {
+    background-color: #D8D2C2;
+    color: #333;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    /* Distribue l'espace entre les éléments */
+    align-items: center;
+    /* Centre verticalement les éléments */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère sous la navbar */
+}
+
+/* Partie gauche avec le texte */
+.navbar .navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left h1 {
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+/* Espacement entre l'icône et le texte */
+.navbar-left h1 i {
+    margin-right: 10px;
+    /* Espacement entre l'icône et le texte */
+}
+
+/* Styles pour les icônes à droite */
+.navbar .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Changement de couleur au survol des icônes */
+.navbar-right i:hover {
+    color: #ff4d4d;
+}
+
+/* Ajouter une ombre à l'icône */
+.navbar-right i {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

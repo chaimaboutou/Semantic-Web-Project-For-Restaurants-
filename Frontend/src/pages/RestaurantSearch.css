@@ -1,0 +1,66 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF7F0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal de la recherche */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+}
+
+.city-selector {
+    margin: 20px auto;
+    width: 60%;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #4A4947;
+    background-color: #fff;
+}
+
+.loading,
+.error,
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Section de la liste des restaurants */
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permet aux cartes de passer à la ligne si nécessaire */
+    justify-content: space-evenly;
+    /* Distribution homogène des cartes */
+    gap: 20px;
+    /* Espacement entre les cartes */
+    padding: 10px;
+    /* Ajout de marges internes */
+    margin: 0 auto;
+    /* Centrage du conteneur */
+    max-width: 900px;
+    /* Limite la largeur totale */
+}
+
+
+.loading {
+    font-size: 16px;
+    color: gray;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+}
+
+.no-results {
+    font-size: 16px;
+    color: #666;
+}

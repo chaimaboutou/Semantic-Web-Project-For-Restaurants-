@@ -1,0 +1,53 @@
+.restaurant-card {
+    background-color: #D8D2C2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+    /* Remplace inline-block pour éviter des comportements imprévisibles */
+    flex-direction: column;
+    justify-content: space-between;
+    /* Répartition verticale */
+    margin: 20px;
+    /* Supprime les marges externes */
+}
+
+
+
+
+.restaurant-card img {
+    width: 100%;
+
+    height: 70%;
+
+    object-fit: cover;
+    /* Assure que l'image couvre bien l'espace sans déformer */
+    border-radius: 5px;
+}
+
+.restaurant-card h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.restaurant-card p {
+    font-size: 15px;
+    color: black;
+    margin: 3px;
+}
+
+.restaurant-card .details {
+    font-size: 12px;
+    color: #999;
+    margin-top: 2px;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.5);
+    /* Agrandir légèrement la carte au survol */
+}

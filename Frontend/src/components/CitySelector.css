@@ -1,0 +1,54 @@
+/* Container for city selector */
+.city-selector {
+    display: flex;
+    /* Arrange items horizontally */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Align items vertically */
+    gap: 70px;
+    /* Space between buttons */
+    background-color: #ffffcc;
+    /* Light yellow background */
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin: 20px 20px;
+    overflow-x: auto;
+    /* Enable horizontal scrolling if needed */
+}
+
+/* Each city option */
+.city-option {
+    background-color: white;
+    border: 2px solid #B17457;
+    color: black;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 210px;
+    margin: 10px;
+    /* Ensure consistent size */
+}
+
+/* Hover effect */
+.city-option:hover {
+    border-color: #00b386;
+    /* Green border on hover */
+    color: #00b386;
+    /* Green text on hover */
+}
+
+/* Active/selected city */
+.city-option.active {
+    border-color: #00b386;
+    /* Green border */
+    color: #00b386;
+    /* Green text */
+    font-weight: bold;
+}
