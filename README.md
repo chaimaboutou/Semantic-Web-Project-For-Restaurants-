@@ -1,6 +1,6 @@
-# Restaurant Finder
+# Recherche Restaurant
 
-Restaurant Finder est une application web permettant de rechercher des restaurants en fonction de la ville sélectionnée. L'utilisateur peut choisir une ville, afficher la liste des restaurants disponibles et explorer les options offertes par chaque restaurant.
+Recherche Restaurant est une application web permettant de rechercher des restaurants en fonction de la ville sélectionnée. L'utilisateur peut choisir une ville, afficher la liste des restaurants disponibles et explorer les options offertes par chaque restaurant.
 
 ## Fonctionnalités
 
